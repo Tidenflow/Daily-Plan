@@ -1,0 +1,7 @@
+{
+  "name": "daily-plan",
+  "scripts": {
+    "generate": "node generate-tree.js",
+    "postcommit": "node generate-tree.js && git add tree.json && git commit -m 'Update tree.json' || echo 'No changes'"
+  }
+}
